@@ -1,6 +1,5 @@
 import { action, decorate, observable } from "mobx";
 import ApolloClient from "apollo-boost";
-//import { client } from "../App";
 import { getPhones } from "./PhoneList";
 
 const client = new ApolloClient({
@@ -18,7 +17,6 @@ class PhoneListModel {
     const response = await client.query({ query: getPhones });
     const phones = response.data.getPhones;
 
-    console.log(phones);
     this.setPhones(phones);
   };
 
