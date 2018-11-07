@@ -1,6 +1,7 @@
 import React from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
+import PhoneCard from "./PhoneCard";
 
 export const getPhones = gql`
   {
@@ -22,17 +23,13 @@ function PhoneList() {
         if (loading) return <p>Lodaing...</p>;
         if (error) return <p>You are in trouble!</p>;
 
-        return data.getPhones.map(({ id, brand, model, price, image, tag }) => (
-          <ul key={id}>
-            <li>{brand}</li>
-            <li>{model}</li>
-            <li>{price}€</li>
-            <li>
-              <img src={image} alt="phone" />
-            </li>
-            <li>{tag}</li>
-          </ul>
-        ));
+        return (
+          <div className="demo-app-wrapper">
+            {data.getPhones.map(phone => (
+              <PhoneCard phone={phone} key={phone.id} />
+            ))}
+          </div>
+        );
       }}
     </Query>
   );

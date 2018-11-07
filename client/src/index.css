@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.demo-app-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.phone-card-container {
+  width: 180px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px grey;
+  margin: 0 5px;
+  margin-top: 10px;
+}
+
+.phone-card-container div {
+  padding: 5px 0;
+}
+
+.phone-card-container div.tag {
+  padding: 10px;
+  text-align: right;
+}
+
+.tag span {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: coral;
+  color: white;
+  font-weight: 600;
+}
+
+.image-container {
+  height: 50%;
+}
+
+.image {
+  height: 90%;
+  width: 50%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.price {
+  font-weight: 600;
+}

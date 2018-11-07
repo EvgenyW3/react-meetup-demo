@@ -9,7 +9,9 @@ const phones = [
     price: "1349,00",
     image:
       "https://kauppa.telia.fi/yksityisille/images/phones/xlarge/01_AppleiPhoneXS256GB_gold.png",
-    tag: "New"
+    tag: "New",
+    cms_id: "12",
+    slug: "qwe"
   },
   {
     id: 1,
@@ -18,7 +20,9 @@ const phones = [
     price: "549,00",
     image:
       "https://kauppa.telia.fi/yksityisille/images/phones/xlarge/02_OnePlus6T6GBplus128GB_mirrorblack-v2.png",
-    tag: "Pre-sale"
+    tag: "Pre-sale",
+    cms_id: "34",
+    slug: "rty"
   },
   {
     id: 2,
@@ -27,7 +31,9 @@ const phones = [
     price: "379,00",
     image:
       "https://kauppa.telia.fi/yksityisille/images/phones/xlarge/01_Nokia71_blue.png",
-    tag: "New"
+    tag: "New",
+    cms_id: "56",
+    slug: "uio"
   },
   {
     id: 3,
@@ -36,7 +42,9 @@ const phones = [
     price: "349,00",
     image:
       "https://kauppa.telia.fi/yksityisille/images/phones/xlarge/01_HonorPlay_black.png",
-    tag: "New"
+    tag: "New",
+    cms_id: "78",
+    slug: "asd"
   },
   {
     id: 4,
@@ -45,7 +53,9 @@ const phones = [
     price: "599,00",
     image:
       "https://kauppa.telia.fi/yksityisille/images/phones/xlarge/01_HuaweiP20128GB_black.png",
-    tag: "Pre-sale"
+    tag: "Pre-sale",
+    cms_id: "90",
+    slug: "fgh"
   }
 ];
 
@@ -58,6 +68,8 @@ const typeDefs = gql`
     price: String
     image: String
     tag: String
+    cms_id: String
+    slug: String
   }
 
   type Query {

@@ -4,7 +4,7 @@ import { ApolloProvider } from "react-apollo";
 import PhoneList from "./components/PhoneList";
 
 export const client = new ApolloClient({
-  uri: "https://graphql-react-meetup.herokuapp.com/"
+  uri: "http://localhost:4000"
 });
 
 function App() {
