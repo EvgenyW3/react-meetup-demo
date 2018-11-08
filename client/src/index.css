@@ -1,6 +1,12 @@
+html {
+  height: 100vh;
+  background: url(https://wallpapersite.com/images/pages/pic_h/901.jpg);
+}
+
 body {
   font-family: sans-serif;
   text-align: center;
+  color: white;
 }
 
 .demo-app-wrapper {
@@ -16,6 +22,8 @@ body {
   box-shadow: 0px 1px 3px grey;
   margin: 0 5px;
   margin-top: 10px;
+  color: black;
+  background-color: white;
 }
 
 .phone-card-container div {
@@ -23,6 +31,7 @@ body {
 }
 
 .phone-card-container div.tag {
+  height: 18px;
   padding: 10px;
   text-align: right;
 }
